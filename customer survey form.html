@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+    div {
+        box-sizing: border-box;
+        width: 100%;
+        border: 100px solid black;
+        float: left;
+        align-content: center;
+        align-items: center;
+    }
+     
+    form {
+        margin: 0 auto;
+        width: 600px;
+    }
+    </style>
+    <title>
+        Customer survey form
+    </title>
+</head>
+ 
+<body>
+    <h1 style="text-align: center;">
+        Customer survey form
+    </h1>
+    <form name="CSForm" onsubmit="return cloudvandana()"
+          method="post">
+        
+           First Name:
+            <input type="text" size="40" name="Name" />
+            <p> Last Name:
+            <input type="text" size="40" name="Last Name" /><br/>
+            <p>
+                Date of Birth:
+            <input type="date" name="date" id="date" 
+            placeholder="YYYY-MM-DD"/>
+        </p>
+        
+        <p>
+            Select your country
+            <select type="text" value="" name="Subject">
+                <option>INDIA</option>
+                <option>SHRILANKA</option>
+                <option>USA</option>
+                <option>FRANCE</option>
+                
+            </select>
+        </p>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br/>
+<p>
+
+ What is your Profession?:
+<input type="text" size="40" name="Profession" /><br/>
+</p>
+        
+        <p>
+           Enter your E-mail Address:
+            <input type="text" size="40" name="EMail" />
+        </p>
+        <p>
+            Mobile No:
+            <input type="text" size="40" name="Mobile No." />
+        </p>
+        <br />
+        
+        <br />
+        <br />
+        
+       
+        <p>
+            <input type="submit" value="submit" name="Submit" />
+            <input type="reset" value="Reset" name="Reset" />
+        </p>
+    </form>
+</body>
+</html>
